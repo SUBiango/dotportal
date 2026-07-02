@@ -1019,10 +1019,23 @@ button {
         border-color var(--dur-fast),
         background-color var(--dur-slow) var(--ease-inout);
 }
-.hero-product-pill i {
+.hero-product-pill .icon {
     font-size: 0.5625rem;
     color: var(--color-accent);
 }
+
+/* === INLINE SVG ICONS (replaces Font Awesome) === */
+.icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: -0.125em;
+    flex-shrink: 0;
+}
+.icon-sun { display: none; }
+[data-theme="dark"] .icon-moon { display: none; }
+[data-theme="dark"] .icon-sun { display: inline-block; }
 
 /* === PHILOSOPHY: Watermark shows faintly on hover too === */
 .philosophy-item:hover::before {

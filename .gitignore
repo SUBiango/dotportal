@@ -7,4 +7,5 @@ scss/
 .vscode/
 memory/
 scripts/
-templates
+templates/
+.DS_Store
