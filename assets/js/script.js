@@ -16,11 +16,10 @@ function init() {
 }
 
 function initFooterYear() {
-    const footerCopyright = document.querySelector('.footer-copyright');
-    if (!footerCopyright) return;
+    const footerYear = document.querySelector('.footer-year');
+    if (!footerYear) return;
 
-    const year = new Date().getFullYear();
-    footerCopyright.textContent = `© ${year} Dot Portal. Still here. Still building.`;
+    footerYear.textContent = new Date().getFullYear();
 }
 
 // === THEME TOGGLE ===
